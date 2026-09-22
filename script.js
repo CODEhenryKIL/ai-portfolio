@@ -22,7 +22,6 @@
       const active = linksById.get(visible.target.id);
       if (active) {
         active.setAttribute('aria-current', 'page');
-        active.scrollIntoView({ block: 'nearest', inline: 'nearest' });
       }
     },
     { rootMargin: '-30% 0px -55% 0px', threshold: [0, 0.25, 0.5] }
